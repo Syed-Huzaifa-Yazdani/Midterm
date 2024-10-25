@@ -89,11 +89,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: 0 auto;
+  background-image: url(img/img/back1.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .summit-content h1 {
   font-size: 18px;
-  color: #ff6b6b;
+  color: #ff4d4d;
   margin-bottom: 10px;
 }
 
@@ -167,18 +170,18 @@ body {
 .main-program {
   max-width: 400px;
   margin: 0 auto;
-  background-image: url(img/back.jfif);
+  background-image: url(img/img/back\ \(1\).jfif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .main-program h2 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: white;
   text-transform: uppercase;
+  color: white;
 }
 
 .program-item {
@@ -344,9 +347,10 @@ body {
 }
 
 .featured-speakers h2 {
-  font-size: 24px;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
+  color: blue;
 }
 
 .speaker {
@@ -422,5 +426,153 @@ body {
   .speaker-info p {
       font-size: 12px;
   }
+}
+
+.hidden-speaker {
+  display: none;
+}
+
+/* Base styling */
+.partners-section {
+  background-color: #333; /* Dark background for the upper section */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.partners-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partners-logos img {
+  max-width: 100px; /* Adjust the size of the logos */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.partners-logos img:hover {
+  opacity: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: white; /* White background for the footer */
+  color: #333; /* Dark text for contrast */
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 600px) {
+  .partners-logos {
+    flex-direction: column; /* Stack logos vertically */
+    align-items: center;
+  }
+
+  .partners-logos img {
+    max-width: 80px; /* Smaller logos on mobile */
+  }
+
+  .partners-section h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+.hidden-speaker {
+  display: none;
+}
+
+.speaker {
+  margin-bottom: 15px;
+}
+
+.more-btn, .less-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.more-btn:hover, .less-btn:hover {
+  background-color: #0056b3;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.more-btn,
+.less-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.less-btn {
+  display: none;
+}
+
+.hidden-speaker {
+  display: none;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between speakers */
+}
+
+.speaker-row {
+  display: flex; /* Use flexbox for the hidden speakers */
+}
+
+.speaker-img {
+  width: 150px; /* Adjust the image size as needed */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.speaker-info {
+  text-align: left; /* Align text to the left */
+}
+
+.more-btn,
+.less-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.less-btn {
+  display: none;
+}
+
+.hidden-speaker {
+  display: none;
+}
+
+#Yamal, #vini {
+  margin-left: 140px;
 }
 
