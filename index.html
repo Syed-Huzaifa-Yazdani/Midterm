@@ -39,10 +39,10 @@
 
   <section class="main-program">
     <h2>WATCH BIGGEST GAME AT VENUES </h2>
-    <h2>BRING YOUR FRIENDS WITH YOU  </h2>
+    <h2>BRING YOUR FRIENDS WITH YOU </h2>
 
     <div class="program-item">
-        <div class="icon"><img src="img/location.png" ></div>
+        <div class="icon"><img src="img/img/location.png" ></div>
         <div class="content">
             <h3>MADRID</h3>
             <p>Watch the match in the heart of Real Madrid's home stadium, surrounded by passionate fans. Enjoy the electric atmosphere and the unique energy of the Bernabéu.</p>
@@ -50,7 +50,7 @@
     </div>
     
     <div class="program-item">
-        <div class="icon"><img src="img/location.png" alt="CC Exhibition Icon"></div>
+        <div class="icon"><img src="img/img/location.png" alt="CC Exhibition Icon"></div>
         <div class="content">
             <h3>Camp Nou</h3>
             <p>Immerse yourself in the vibrant atmosphere of Barcelona's iconic stadium. Cheer on FC Barcelona with thousands of dedicated fans and feel the passion of the Catalan crowd.</p>
@@ -58,7 +58,7 @@
     </div>
 
     <div class="program-item">
-        <div class="icon"><img src="img/location.png" ></div>
+        <div class="icon"><img src="img/img/location.png" ></div>
         <div class="content">
             <h3>New York</h3>
             <p>Witness the match on a massive screen in the heart of the bustling metropolis. Join a crowd of football enthusiasts from all over the world and enjoy the festive atmosphere.</p>
@@ -66,7 +66,7 @@
     </div>
 
     <div class="program-item">
-        <div class="icon"><img src="img/location.png" ></div>
+        <div class="icon"><img src="img/img/location.png" ></div>
         <div class="content">
             <h3>Sydney</h3>
             <p> Watch El Clásico against the stunning backdrop of the Sydney Opera House. Enjoy the unique blend of football and iconic architecture, creating a memorable experience.</p>
@@ -74,7 +74,7 @@
     </div>
 
     <div class="program-item">
-        <div class="icon"><img src="img/location.png"></div>
+        <div class="icon"><img src="img/img/location.png"></div>
         <div class="content">
             <h3>Tokyo</h3>
             <p>Experience the match in one of Japan's largest stadiums, filled with passionate football fans. Enjoy the vibrant atmosphere and the enthusiasm of the Japanese crowd.</p>
@@ -88,7 +88,7 @@
 <section class="featured-speakers">
   <h2>BIGGEST NAMES</h2>
   <div class="speaker">
-      <img src="img/lamine.jfif" alt="Yochai Benkler" class="speaker-img">
+      <img src="img/img/lamine.jfif" alt="Yochai Benkler" class="speaker-img">
       <div class="speaker-info">
           <h3>LAMINE YAMAL</h3>
           <p class="title">A Spanish-born Moroccan footballer, Yamal has made history as the youngest player to represent Spain's national team. Known for his exceptional dribbling skills and vision, he has shown immense potential and is considered one of the most promising young talents in European football.
@@ -98,7 +98,7 @@
       </div>
   </div>
   <div class="speaker">
-      <img src="img/vini.jpg" alt="SohYeong Noh" class="speaker-img">
+      <img src="img/img/vini.jpg" alt="SohYeong Noh" class="speaker-img">
       <div class="speaker-info">
           <h3>VINI JR</h3>
           <p class="title">A Brazilian winger who joined Real Madrid from Flamengo in 2018, Vinícius has quickly established himself as a key player for the club. Known for his pace, agility, and ability to create scoring chances, he has become a fan favorite and a crucial part of Real Madrid's attacking force.
@@ -108,7 +108,10 @@
       </div>
   </div>
   <button class="more-btn">MORE</button>
+  
 </section>
+
+
 
 
 
@@ -121,6 +124,12 @@
     const nav = document.querySelector('.nav-links');
     nav.classList.toggle('active');
 }
+const hamburger = document.querySelector('.hamburger');
+const navbarMenu = document.querySelector('.nav');
+
+hamburger.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
+});
 
     </script>
 </body>

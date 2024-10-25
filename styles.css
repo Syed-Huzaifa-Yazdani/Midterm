@@ -177,7 +177,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: white;
+  color: red;
   text-transform: uppercase;
 }
 
@@ -344,9 +344,10 @@ body {
 }
 
 .featured-speakers h2 {
-  font-size: 24px;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
+  color:blue;
 }
 
 .speaker {
