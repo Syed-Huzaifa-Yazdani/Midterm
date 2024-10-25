@@ -576,3 +576,123 @@ footer {
   margin-left: 140px;
 }
 
+.dropdown-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Position relative to the header */
+  background: white; /* Background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Optional shadow for depth */
+}
+
+.dropdown-menu li {
+  padding: 10px 15px; /* Padding for menu items */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide nav links on mobile */
+  }
+  .hamburger {
+      display: block; /* Show hamburger icon on mobile */
+  }
+}
+
+.ham {
+  height: 30px;
+  margin-top: -10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333; /* Background color of the header */
+  color: white;
+  position: relative; /* Needed for absolute positioning of the dropdown */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* Align items in the center */
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Space between nav links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white; /* Color for nav links */
+}
+
+.hamburger {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex; /* Flex to center the icon */
+  align-items: center; /* Center the icon vertically */
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Position relative to the header */
+  top: 100%; /* Position just below the nav */
+  right: 0; /* Align to the right of the header */
+  background: white; /* Background color */
+  color: black; /* Text color */
+  width: 150px; /* Fixed width for dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Optional shadow for depth */
+  z-index: 1; /* Ensure dropdown appears above other content */
+  display: none; /* Initially hidden */
+}
+
+.dropdown-menu li {
+  padding: 10px 15px; /* Padding for menu items */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide nav links on mobile */
+  }
+  .hamburger {
+      display: flex; /* Show hamburger icon on mobile */
+  }
+}

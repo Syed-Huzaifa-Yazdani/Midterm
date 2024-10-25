@@ -36,3 +36,14 @@ lessBtn.addEventListener('click', () => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
     
+
+function toggleMenu() {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  const isHidden = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '';
+
+  if (isHidden) {
+      dropdownMenu.style.display = 'block'; // Show the dropdown
+  } else {
+      dropdownMenu.style.display = 'none'; // Hide the dropdown
+  }
+}

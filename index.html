@@ -7,22 +7,25 @@
     <title>Header with Hamburger Icon</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Fabrizio Romano</div>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#transfers">Transfers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="logo">Fabrizio Romano</div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#transfers">Transfers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span><img class="ham" src="img/img/hamburger.png"></span>
+        </div>
+    </nav>
+    <ul class="dropdown-menu" style="display: none;">
+        <li><a href="#buy-tickets">Buy Tickets</a></li>
+        <li><a href="#see-venues">See Venues</a></li>
+        <li><a href="#matches">Matches</a></li>
+    </ul>
+</header>
 
     <section class="summit-content">
       <h1>"HELLO! FOOTBALL FANS"</h1>
